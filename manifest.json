@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "实时汇率显示器",
+    "version": "1.0",
+    "description": "通过调用API接口显示实时汇率",
+    "host_permissions": [
+        "https://fx.cmbchina.com/*"
+    ],
+    "action": {
+        "default_popup": "dist/index.html",
+        "default_title": "react-chrome-extension"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
